@@ -58,7 +58,7 @@ header {
         padding: 0 1rem;
 
         .unstyled-list {
-            list-style: none;
+            list-style: vars.$unstyled-list;
             padding: 0;
             margin: 0;
             display: flex;
@@ -70,7 +70,7 @@ header {
 
         a {
             text-decoration: none;
-            color: vars.$header_text
+            color: vars.$white_text
         }
 
         .d-flex {

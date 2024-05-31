@@ -1,14 +1,15 @@
 <script>
 //importo componenti
-import AppTitle from './components/AppTitle.vue';//componente di prova
 
 import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue'
 
 
 export default {
     //aggiunta componenti --> nomi
     components: {
-        AppHeader
+        AppHeader,
+        AppFooter
     }
 }
 
@@ -17,6 +18,7 @@ export default {
 
 <template>
     <AppHeader />
+    <AppFooter />
 </template>
 
 
