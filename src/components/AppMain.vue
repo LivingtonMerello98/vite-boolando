@@ -64,7 +64,9 @@ export default {
                     discount: null,
                     sustainability: true
                 }
-            ]
+            ],
+
+            index: 0,
         }
     }
 }
@@ -77,7 +79,7 @@ export default {
             <div class="row">
                 <div class="col-33" v-for="(product, index) in products" :key="index">
                     <div class="content">
-                        <img :src="product.hideImage" :alt="'hide ' + product.name" class="hide w-100">
+                        <img :src="product.hideImage" :alt="'hide ' + product.name" class="hide img">
                         <img :src="product.image" :alt="product.name">
                         <div class="bg-white pxy-10-20">
                             <span class="red-heart-label bg-white">&hearts;</span>
@@ -103,6 +105,7 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as vars;
 @use '../assets/styles/partials/mixin' as mixin;
+@use '../style.scss' as style;
 
 main {
     padding-top: 120px;
@@ -120,8 +123,9 @@ main {
                 .content {
                     position: relative;
 
-                    .w-100 {
+                    img {
                         width: 100%;
+                        height: auto;
                     }
 
                     .hide {
