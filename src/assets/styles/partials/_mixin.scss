@@ -1,0 +1,14 @@
+//inseriamo i mixin
+
+@use './variables' as vars;
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin icon {
+    width: 20px;
+    height: auto;
+    margin: 0 5px;
+}

@@ -1,0 +1,17 @@
+// foglio di esecuzione
+
+@use '../src/assets/styles/partials/variables' as vars;
+@use '../src/assets/styles/partials/mixin' as mixin;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: vars.$bg_background;
+    font-family: 'Roboto', sans-serif;
+}
