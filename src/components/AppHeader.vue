@@ -43,6 +43,7 @@ header {
     background-color: vars.$bg_navBar;
     width: 100%;
     position: fixed;
+    z-index: 100;
 
     .container {
         max-width: 1200px;

@@ -15,3 +15,8 @@ body {
     background-color: vars.$bg_background;
     font-family: 'Roboto', sans-serif;
 }
+
+.content:hover .hide {
+    display: block;
+    z-index: 2;
+}

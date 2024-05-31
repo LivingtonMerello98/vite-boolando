@@ -97,5 +97,9 @@ footer {
     .j-start {
         justify-content: start;
     }
+
+    .icon {
+        @include mixin.icon;
+    }
 }
 </style>
