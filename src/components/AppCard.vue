@@ -1,71 +1,16 @@
 <script>
-
+import ProductsData from '../assets/data/db.json'
 export default {
     name: 'AppCard',
     data() {
         return {
-            products: [
-                {
-                    hideImage: '/img/1b.webp',
-                    image: '/img/1.webp',
-                    brand: "Levi's",
-                    name: 'Relaxed fit tee unisex',
-                    price: 14.99,
-                    oldPrice: 29.99,
-                    discount: 50,
-                    sustainability: true
-                },
-                {
-                    hideImage: '/img/2b.webp',
-                    image: '/img/2.webp',
-                    brand: 'Guess',
-                    name: 'Roses tee',
-                    price: 20.99,
-                    oldPrice: 29.99,
-                    discount: 30,
-                    sustainability: false
-                },
-                {
-                    hideImage: '/img/3b.webp',
-                    image: '/img/3.webp',
-                    brand: 'Come Zucchero Filato',
-                    name: 'Voglia di colori pastello',
-                    price: 129.99,
-                    oldPrice: 29.99,
-                    discount: 30,
-                    sustainability: false
-                },
-                {
-                    hideImage: '/img/4b.webp',
-                    image: '/img/4.webp',
-                    brand: "Levi's",
-                    name: 'tee unisex',
-                    price: 14.99,
-                    oldPrice: 29.99,
-                    discount: 50,
-                    sustainability: true
-                },
-                {
-                    hideImage: '/img/5b.webp',
-                    image: '/img/5.webp',
-                    brand: 'Maya Deluxe',
-                    name: 'Stripe Bodice',
-                    price: 99.99,
-                    oldPrice: null,
-                    discount: null,
-                    sustainability: false
-                },
-                {
-                    hideImage: '/img/6b.webp',
-                    image: '/img/6.webp',
-                    brand: 'Esprit',
-                    name: 'Maglione - Black',
-                    price: 29.99,
-                    oldPrice: null,
-                    discount: null,
-                    sustainability: true
-                }
-            ]
+            products: ProductsData.products
+        }
+    },
+    methods: {
+        getImage(imageName) {
+            console.log('immagini trovate correttamente')
+            return new URL(`../img/${imageName}`, import.meta.url).href
         }
     }
 }
@@ -77,23 +22,22 @@ export default {
     <div class="row">
         <div class="col-33" v-for="(product, index) in products" :key="index">
             <div class="content">
-                <img :src="product.hideImage" :alt="'hide ' + product.name" class="hide img">
-                <img :src="product.image" :alt="product.name">
+                <img :src=getImage(product.frontImage) :alt="'hide ' + product.name" class="hide">
+                <img :src=getImage(product.backImage) :alt="product.name">
                 <div class="bg-white pxy-10-20">
                     <span class="red-heart-label bg-white">&hearts;</span>
                     <span class="heart-label bg-white">&hearts;</span>
                 </div>
-                <div v-if="product.discount" class="discount-label bg-red white z-index-3">
-                    <span>&#45;{{ product.discount }}&#37;</span>
-                </div>
-                <div v-if="product.sustainability" class="sustainability-label bg-green white z-index-3">
-                    <span>Sostenibilità</span>
+                <div class="labels" v-for="(label, badgeIndex) in product.badges" :key="badgeIndex">
+                    <span v-if="label.type === 'discount'" class="discount-label bg-red white z-index-3">&#45;{{ label.value
+                    }}</span>
+                    <span v-if="label.type === 'tag'" class="sustainability-label bg-green white z-index-3">{{ label.value
+                    }}</span>
                 </div>
             </div>
             <span class="brand">{{ product.brand }}</span>
             <h4 class="dress-name">{{ product.name }}</h4>
-            <span class="product-price">{{ product.price }}&euro;</span>
-            <span v-if="product.oldPrice" class="old-price">{{ product.oldPrice }}&euro;</span>
+            <span class="product-price">&euro;{{ product.price }}</span>
         </div>
     </div>
 </template>

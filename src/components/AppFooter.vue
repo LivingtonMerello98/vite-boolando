@@ -18,15 +18,15 @@ export default {
                         <div class="text-left">
                             <span class="white f-w-500 f-s-14 my-10">trovaci anche su</span>
                             <ul class="unstyled-list d-flex j-start">
-                                <li><a href=""><img src="/img/twitter-rounded-svgrepo-com.svg" alt="user icon"
+                                <li><a href=""><img src="../img/twitter-rounded-svgrepo-com.svg" alt="user icon"
                                             class="icon"></a></li>
-                                <li><a href=""><img src="/img/facebook-svgrepo-com (1).svg" alt="heart icon"
+                                <li><a href=""><img src="../img/facebook-svgrepo-com (1).svg" alt="heart icon"
                                             class="icon"></a></li>
-                                <li><a href=""><img src="/img/instagram-logo-facebook-svgrepo-com.svg" alt="bag icon"
+                                <li><a href=""><img src="../img/instagram-logo-facebook-svgrepo-com.svg" alt="bag icon"
                                             class="icon"></a></li>
-                                <li><a href=""><img src="/img/pinterest-svgrepo-com.svg" alt="bag icon" class="icon"></a>
+                                <li><a href=""><img src="../img/pinterest-svgrepo-com.svg" alt="bag icon" class="icon"></a>
                                 </li>
-                                <li><a href=""><img src="/img/youtube-rounded-svgrepo-com.svg" alt="bag icon"
+                                <li><a href=""><img src="../img/youtube-rounded-svgrepo-com.svg" alt="bag icon"
                                             class="icon"></a></li>
                             </ul>
                         </div>

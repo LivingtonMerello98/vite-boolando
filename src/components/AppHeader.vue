@@ -38,13 +38,13 @@ export default {
                     </span>
                 </div>
                 <div class="col-50 text-center py-5">
-                    <img src="/img/boolean-logo.png" alt="Boolean logo" class="logo">
+                    <img src="../img/boolean-logo.png" alt="Boolean logo" class="logo">
                 </div>
                 <div class="col-25 ">
                     <ul class="unstyled-list d-flex j-end">
-                        <li><a href=""><img src="/img/user-svgrepo-com.svg" alt="user icon" class="icon"></a></li>
-                        <li><a href=""><img src="/img/heart-svgrepo-com.svg" alt="heart icon" class="icon"></a></li>
-                        <li><a href=""><img src="/img/bag-4-svgrepo-com.svg" alt="bag icon" class="icon"></a></li>
+                        <li><a href=""><img src="../img/user-svgrepo-com.svg" alt="user icon" class="icon"></a></li>
+                        <li><a href=""><img src="../img/heart-svgrepo-com.svg" alt="heart icon" class="icon"></a></li>
+                        <li><a href=""><img src="../img/bag-4-svgrepo-com.svg" alt="bag icon" class="icon"></a></li>
                     </ul>
                 </div>
             </div>
