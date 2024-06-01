@@ -33,7 +33,7 @@ export default {
                 <div class="col-25">
                     <span>
                         <ul class="unstyled-list text-center row space-around">
-                            <li v-for="(target, index) in link"><a href="">{{ target.target }}</a></li>
+                            <li v-for="(target, index) in link" :key="target"><a href="">{{ target.target }}</a></li>
                         </ul>
                     </span>
                 </div>
