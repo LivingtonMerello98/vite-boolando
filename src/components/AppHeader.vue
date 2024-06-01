@@ -2,6 +2,26 @@
 
 export default {
     name: 'Header',
+    data() {
+        return {
+            link: [
+                {
+                    target: 'Donna',
+                    link: ''
+                },
+                {
+                    target: 'Uomo',
+                    link: ''
+
+                },
+                {
+                    target: 'Bambini',
+                    link: ''
+                }
+            ],
+            index: 0,
+        }
+    }
 }
 
 </script>
@@ -13,9 +33,7 @@ export default {
                 <div class="col-25">
                     <span>
                         <ul class="unstyled-list text-center row space-around">
-                            <li><a href="">Donna</a></li>
-                            <li><a href="">Uomo</a></li>
-                            <li><a href="">Bambino</a></li>
+                            <li v-for="(target, index) in link"><a href="">{{ target.target }}</a></li>
                         </ul>
                     </span>
                 </div>
