@@ -1,7 +1,51 @@
-# Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-## Recommended IDE Setup
+# Vite Boolando 🛍️
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+Vite Boolando è una pagina web sviluppata con Vite, Vue.js e Sass. Consente agli utenti di visualizzare gli articoli di un ipotetico store disponibili online utilizzando un file JSON
+
+## Struttura del progetto
+
+•index.html: Contiene la struttura HTML della pagina web e inclusione del main.js.
+
+•📂Src: principali 3 cartelle del progetto. 
+
+    •📂assets
+    |   |
+    |   |_•📂data
+    |   |   |
+    |   |   |_JSON
+    |   |
+    |   |_•📂styles
+    |       |
+    |       |_📂/partials --> 
+    |       |
+    |       |_main.scss
+    •components    
+    |   |
+    |   |_•AppCard
+    |   |
+    |   |_•AppHeader
+    |   |
+    |   |_•AppFooter
+    |   |
+    |   |_•AppMain
+    |   
+    •📂img   
+•App.vue: Contiene importazione dei componenti e assemblaggio nel <template/>
+.
+
+•main.js: destrutturazione di createApp ,importazione del file ./style.scss e metodo .mount() per montare l'applicativo sull index.html
+
+## Preview
+
+![App Screenshot]![App Screenshot](/boolando.png)
+
+
+## 🚀 About Me
+
+•Nome: Livington Merello 
+
+•Email: livington.merello@gmail.com
+
+•GitHub: LivingtonMerello98
