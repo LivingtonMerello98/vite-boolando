@@ -39,7 +39,7 @@ Vite Boolando è una pagina web sviluppata con Vite, Vue.js e Sass. Consente agl
 
 ## Preview
 
-![App Screenshot]![App Screenshot](./public/boolando.png)
+![App Screenshot](./public/boolando.png)
 
 
 ## 🚀 About Me
